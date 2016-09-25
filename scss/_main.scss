@@ -1,0 +1,97 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:200,400,700';
+
+* {
+	font-family: 'Raleway', sans-serif;
+	font-style: 14px;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #EBEBEB;
+}
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+}
+
+header form {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: block;
+	input{
+		height: 30px;
+	}
+	input[type="search"] {
+		width:150px;
+	}
+		&::after {
+			content:'\f002';
+	        font-family: 'FontAwesome';
+	        position: absolute;
+	        left: 118px;
+	        top: -1px;
+	        color: #50C5D9;
+	        display: block;
+	        height: 15px;
+	        padding: 10px;
+	        border-left: 1px solid gray;
+	    }
+}
+
+.form {
+	float: right;
+	width: 29%;
+}
+
+[type="submit"] {
+	background-color: #50C5D9;
+	border-radius: 5px;
+	padding: 1% 12%;
+	color: white;
+}
+
+.top {
+	background-color: #EBEBEB;
+}
+
+.banner {
+	background: url('../img/triangle.jpg')
+	            repeat-x,
+	            url('../img/banner.jpg')
+	            no-repeat;
+	background-position: 0 30;
+	height: 300px;
+}
+
+header section.banner{
+    display: block;
+    max-height: 350px;
+    overflow: hidden; 
+    margin: 0 auto;
+}
+
+
+.mainWidth {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.nav {
+	display: flex;
+    list-style-type: none;
+    margin-right: 5%;
+}
+
+.row:before, .row:after {
+	content:" ";
+	display: table;
+	clear: both;
+}
+
+
+

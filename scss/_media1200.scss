@@ -1,0 +1,10 @@
+@media(min-width:1200px) {  
+
+	$n: 8.333%;
+	@for $i from 1 through 12 {
+	    .col-lg-#{$i} { 
+	        width: ($i * $n);
+	    }  
+	}
+
+}
