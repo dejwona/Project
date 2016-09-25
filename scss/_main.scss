@@ -14,8 +14,9 @@ body {
 [class*='col-'] {
 	float: left;
 	min-height: 1px;
+	padding: 2%;
 }
-
+// search
 header form {
 	position: relative;
 	margin: 0;
@@ -55,6 +56,7 @@ header form {
 
 .top {
 	background-color: #EBEBEB;
+	padding-top: 1%;
 }
 
 .banner {
@@ -78,20 +80,50 @@ header section.banner{
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
+}
+
+.box1 {
 	background-color: white;
 }
 
+.box2 {
+	background-color: #55C5DB;
+}
+
+.keys {
+	float: left;
+}
+
+// nav
 .nav {
 	display: flex;
     list-style-type: none;
-    margin-right: 5%;
+    li:not(:last-child) {
+        border-right: 1px solid gray;
+        margin-right: 1%;
+        padding-right: 1%;
+    }
 }
 
+// column
 .row:before, .row:after {
 	content:" ";
 	display: table;
 	clear: both;
 }
+
+.linkDowiedz {
+	color: #55C5DB;
+	text-decoration: none;
+}
+
+// footer
+.navFooter {
+	display: flex;
+	list-style-type: none;
+
+}
+
 
 
 
