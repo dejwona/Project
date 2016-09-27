@@ -13,20 +13,20 @@
 </head>
 <body>
     <header>
-        <section class="top mainWidth">
+        <section class="row top mainWidth">
             <img src="./img/logo.png" class="logo">
             <form action="#" class="form">
                 <input type="search" placeholder="Szukaj">
                 <input type="submit" value="Zaloguj">
             </form>
-            <nav>
+            <nav class="row navBox">
                 <ul class="nav">
                     <li>Klienci indywidualni</li>
                     <li>Przedsiębiorcy</li>
                     <li>Firmy i samorządy</li>
                     <li>Rolnicy</li>
                     <li>Korporacje</li>
-                    <li>Uczniowie, studenci</li>
+                    <li>Uczniowie, studenci</li>                    
                 </ul>
                 <div class="logo2">Bezpieczny Bank</div>
             </nav>
@@ -36,12 +36,12 @@
         <div class="text">
             <p>Skorzystaj ze specjalnej oferty</p>
             <p>Podróżuj bez obaw</p>
-            <a href="#">Sprawdź</a>
+            <a class="sprawdz" href="#">Sprawdź</a>
         </div>
     </section>
     <section class="container">
-        <section class="row mainWidth box1">
-            <div class="col-lg-6 col-md-6 col-lg-6">
+        <section class="row mainWidth boxInfo">
+            <div class="col-lg-6 col-md-6 col-lg-6 boxKeys">
                 <img class="keys" src="./img/keys.jpg">
                 <h2>Kredyt hipoteczny</h2>
                 <p>Lorem ipsum dolor sit amet enim. 
@@ -54,43 +54,61 @@ commodo volutpat a, convallis ac,
 laoreet enim</p>
                 <a class="linkDowiedz" href="#">Dowiedz się więcej</a>
             </div>
-            <div class="col-lg-6 col-md-6 col-lg-6">
+            <div class="col-lg-6 col-md-6 col-lg-6 boxPrice">
                 <h2>Pożyczka gotówkowa</h2>
-                <form>
-   
+                <form class="price">
+                    <ul>
+                        <li>kwota</li>
+                        <li>100 000</li>
+                    </ul>           
+                    <div class="sliderUi">
+                        <div class="buttonSliderUi"></div>
+                    </div> 
+                    <ul>
+                        <li>czas trwania</li>
+                        <li>2 lata</li>
+                    </ul>            
+                    <div class="sliderUi">
+                        <div class="buttonSliderUi time"></div>
+                    </div>
+                    <div class="line"></div>              
+                    <p class="rata">Rata 
+                        <span>50 zł</span>
+                        <a class="linkDowiedz" href="#">Dowiedz się więcej</a>
+                    </p>   
                 </form>
-                <a class="linkDowiedz" href="#">Dowiedz się więcej</a>
+                
+                
             </div>
         </section>
     </section>
     <section class="icon">
-        <section class="row mainWidth box2">
-             <div class="col-lg-4">
-                <img src="./img/computer.svg">
+        <section class="row mainWidth">
+             <div class="col-lg-4 col-md-4 col-sm-12 boxIcon">
+                <img src="./img/computer.png">
                 <h3>Konto online</h3>
                 <p>Załóż konto przez internet</p>
-                <a href="#">Otwórz konto</a>
+                <a class="linkIcon" href="#">Otwórz konto</a>
             </div>
 
-            <div class="col-lg-4">
-                <img src="./img/cloud.svg">
+            <div class="col-lg-4 col-md-4 col-sm-12 boxIcon">
+                <img src="./img/cloud.png">
                 <h3>Rozpocznij chat</h3>
                 <p>Porozmawiaj z doradcą</p>
-                <a href="#">Zapytaj</a>
+                <a class="linkIcon" href="#">Zapytaj</a>
              </div>
 
-            <div col-lg-4>
-                <img src="./img/percent.svg">
-                <h3></h3>
-                <p></p>
-                <a href="#">Otwórz konto</a>
+            <div class="col-lg-4 col-md-4 col-sm-12 boxIcon">
+                <img src="./img/percent.png">
+                <h3>Kredyt gotówkowy</h3>
+                <p>Ustal ratę i datę spłaty</p>
+                <a class="linkIcon" href="#">Sprawdź</a>
             </div>
         </section>
     </section>
     <footer>
-        <section class="row mainWidth box1">
-
-            <div class="col-lg-4">
+        <section class="row mainWidth boxLinkiAll">
+            <div class="col-lg-4 col-md-4 col-sm-12 boxLinki">
                 <h3>Klienci indywidualni</h3>
                 <ul>
                     <li>Konta</li>
@@ -104,7 +122,7 @@ laoreet enim</p>
                 </ul>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 boxLinki">
                 <h3>Klienci VIP Premium</h3>
                 <ul>
                     <li>Konta</li>
@@ -118,7 +136,7 @@ laoreet enim</p>
                 </ul>
             </div>  
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 boxLinki">
                 <h3>Małe firmy i korporacje</h3>
                 <ul>
                     <li>Konta</li>
@@ -132,22 +150,21 @@ laoreet enim</p>
                 </ul>
             </div> 
         </section> 
-        <section class="mainWidth">
-            <div>
-                <div class="col-lg-8">
-                <p>801 222 222 
-© 2015 BB Bezpieczny Bank S.A. Wszelkie prawa zastrzeżone.Korzystanie z serwisu oznacza akceptację regulaminu
-                </p>
-                </div>
+        <section class="mainWidth">           
+            <div class="col-lg-8 boxFooter">
+	            <p>801 222 222</p>
+	            <p>
+	© 2015 BB Bezpieczny Bank S.A. Wszelkie prawa zastrzeżone. Korzystanie z serwisu oznacza akceptację regulaminu
+	            </p>
+            </div>
                 <div class="col-lg-4">
                     <ul class="navFooter">
-                        <li>Mapa serwisu</li>
+                        <li>Mapa&nbsp;serwisu</li>
                         <li>English</li>
                         <li>Twitter</li>
                         <li>Facebook</li>
                     </ul> 
-                </div>
-            </div>   
+                </div> 
 
         </section>
 
