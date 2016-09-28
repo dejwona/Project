@@ -1,11 +1,19 @@
 @media(min-width:800px) {
  
-	$n: 8.333%;
-	@for $i from 1 through 12 {
-	    .col-md-#{$i} { 
-	        width: ($i * $n);
-	    }  
-	}
+    $n: 8.333%;
+    @for $i from 1 through 12 {
+        .col-md-#{$i} { 
+            width: ($i * $n);
+        }  
+    }
+    
+    .boxKeys {
+        padding: 0 2%;
+    }
 
+    .boxPrice {
+        padding: 0 4%;
+    }
+    
 
 } 

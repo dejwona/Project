@@ -1,18 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:200,400,700';
 
 * {
-	font-family: 'Raleway', sans-serif;
-	font-style: 14px;
-	box-sizing: border-box;
-
+    font-family: 'Raleway', sans-serif;
+    font-style: 14px;
+    box-sizing: border-box;
 }
 
 body {
-	background-color: #EBEBEB;
+    background-color: #EBEBEB;
 }
 
 .logo {
-	padding: 1% 0;
+    padding: 1% 0;
+    max-width: 20%;
 }
 
 /* search */
@@ -22,12 +22,12 @@ header form {
 	padding: 0;
 	display: block;
 	input{
-		height: 28px;
-		width: 40%;
+		height: 24px;
+		max-width: 40%;
 		padding-bottom: 1%;
 	}
 	input[type="search"] {
-		width:170px;
+		max-width:170px;
 	}
 		&::after {
 			content:'\f002';
@@ -38,7 +38,7 @@ header form {
 	        color: #50C5D9;
 	        display: block;
 	        height: 15px;
-	        padding: 9px;
+	        padding: 7px;
 	        border-left: 1px solid gray;
 	    }
 }
@@ -46,7 +46,7 @@ header form {
 .form {
 	margin-top: 1%;
 	float: right;
-	width: 30%;
+	max-width: 100%;
 }
 
 [type="submit"] {
@@ -75,6 +75,31 @@ header form {
         margin-right: 1%;
         padding-right: 1%;
     }
+    span {
+   	    display: none;
+   	    cursor: pointer;
+    }
+    &.mobile {
+    	span {
+    		display: block;
+    	}
+    	li {
+    		display: none;
+    		&.show {
+    			display: block;
+    			width: 100%;
+    			text-align: center;
+    			padding: 10px;
+
+    		}
+    	}
+
+    }
+}
+
+nav {
+
+
 }
 
 .logo2 {
@@ -118,10 +143,15 @@ header form {
 	line-height: 0;
 }
 
+.text p:first-child {
+    line-height: 0.9rem;
+}
+
 .text p:nth-child(2) {
         font-size: 1.5rem;
         text-transform: uppercase;
         padding-bottom: 15%;
+        line-height: 1.4rem;
 }
 
 .sprawdz {
@@ -165,24 +195,24 @@ header form {
 }
 
 .keys {
-	float: left;
-	padding: 4% 3% 4% 0;	
+    float: left;
+    padding: 4% 3% 6% 0;
 }
 
 .boxInfo {
-	background-color: white;
-	font-size: 0.9rem;
-	padding: 3% 0;
+    background-color: white;
+    font-size: 0.9rem;
+    padding: 4% 0;
 }
 
 .linkDowiedz {
-	color: #55C5DB;
-	float: right;
-	font-size: 1rem;
+    color: #55C5DB;
+    float: right;
+    font-size: 1rem;
 }
 
 .boxKeys {
-	padding: 0 4%;
+    padding: 0 4%;
 }
 
 /* form price*/
@@ -213,41 +243,41 @@ header form {
 }
 
 .time {
-	left: 260px;
+	left: 287px;
 	top: -10px;	
 }
 
 .line {
 	width: 83%;
-	background-color: #55C5DB;
-	height: 1px;
-	margin-top: 7%;
-	margin-left: 3%;
+    background-color: #55C5DB;
+    height: 1px;
+    margin-top: 7%;
+    margin-left: 3%;
 }
 
 .rata {
-	font-size: 1.1rem;
-	margin-left: 3%;
-	span {
-		color: #55C5DB;
-	}
-	a {
-		padding-right: 14%;
-	}
+    font-size: 1.1rem;
+    margin-left: 3%;
+    span {
+       color: #55C5DB;
+    }
+    a {
+    padding-right: 14%;
+    }
 }
 
 .boxPrice {
-	padding: 0 6%;
+    padding: 0 4%;
 }
 
 .boxIcon {
-	padding: 6% 5%;
-	text-align: center;
-	h3 {
-		font-size: 1.5rem;
-		line-height: 0;
-		font-weight: 500;
-	}
+    padding: 6% 5%;
+    text-align: center;
+    h3 {
+        font-size: 1.5rem;
+        line-height: 0;
+        font-weight: 500;
+    }
 	p {
 		font-size: 0.9rem;
 		padding-bottom: 5%;
@@ -280,8 +310,8 @@ header form {
 
 /* column */
 [class*='col-'] {
-	float: left;
-	min-height: 1px;
+    float: left;
+    min-height: 1px;
 }
 
 .row:before, .row:after {

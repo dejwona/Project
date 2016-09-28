@@ -1,10 +1,40 @@
 @media(min-width:400px) {
 
-	$n: 8.333%;
-	@for $i from 1 through 12 {
-	    .col-sm-#{$i} { 
-	        width: ($i * $n);
-	    }  
-	}
+    $n: 8.333%;
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} { 
+            width: ($i * $n);
+        }  
+    }
+
+[class*='col-'] {
+    float: none;
+    min-height: 1px;
+} 
+
+* {
+    font-style: 15px;
+}
+
+.boxPrice {
+    padding-top: 5%;
+}
+
+.boxFooter {
+	padding: 1%;
+}
+
+.navFooter {
+    li:not(:first-child) {
+        border-left: 1px solid gray;
+        padding-left: 4%;
+        padding-right: 6%;
+    }
+}
+.navBox:last-child {
+    justify-content: inherit;
+}
+
 
 }
+
